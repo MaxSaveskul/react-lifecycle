@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import ReplaceText from './components/ReplaceText/ReplaceText.jsx'
+import FetchList from './components/FetchList/FetchList.jsx'
+import ToggleText from './components/ToggleText/ToggleText.jsx'
 import './App.css';
 
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<ReplaceText />
+			<FetchList />
+			<ToggleText />
+		</div>
+	);
 }
 
 export default App;
