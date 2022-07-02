@@ -11,7 +11,7 @@ class FetchList extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch("http://universities.hipolabs.com/search?name=lviv")
+		fetch("https://date.nager.at/api/v3/PublicHolidays/2021/GB")
 			.then((res) => res.json())
 			.then((nData) => this.setState({ data: nData }))
 			.catch((err) => console.error(err));
@@ -23,7 +23,7 @@ class FetchList extends React.Component {
 				<h2>2. FetchList Task:</h2>
 				<div>{this.state.data.map((item) => {
 					return (
-						<div key={item.web_pages}>{item.name}</div>
+						<div key={item.date}>{item.localName}</div>
 					)
 				})}
 				</div>
